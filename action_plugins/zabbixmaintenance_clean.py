@@ -6,7 +6,6 @@ __metaclass__ = type
 from ansible.plugins.action import ActionBase
 from ansible.errors import AnsibleError
 from ansible.module_utils._text import to_native, to_text
-from ansible.utils.boolean import boolean
 from ansible.utils.hashing import checksum_s
 from ansible.parsing.yaml.objects import AnsibleUnicode
 from pyzabbix import ZabbixAPI
