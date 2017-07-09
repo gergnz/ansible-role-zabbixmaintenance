@@ -51,7 +51,7 @@ class ActionModule(ActionBase):
         hostid = zapi.get_id('host', maintenance_host)
 
         x = {}
-        x['name'] = now
+        x['name'] = str(maintenance_host) + '-' + str(now)
         x['active_since'] = now
         x['active_till'] = soon
         x['hostids'] = [hostid]
